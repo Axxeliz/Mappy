@@ -135,7 +135,7 @@ class MappyApp(ctk.CTk):
         if self.punto_inicio is None or self.punto_destino is None:
             self.label_info.configure(text="Error: Selecciona Inicio y Destino")
             return
-        self.limpiar_caminos()
+
         # Importamos la función desde utils.py
         from utils import buscar_ruta_bfs
 
